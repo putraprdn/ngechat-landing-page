@@ -199,6 +199,36 @@ body {
 	align-items: center;
 	column-gap: 0.5rem;
 }
+
+.download {
+	display: flex;
+	color: #49464A;
+	padding-top: 4rem;
+	column-gap: 2.5rem;
+}
+.download__hero-image {
+	border-radius: 120px;
+}
+.download__text-wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+	justify-content: center;
+}
+.download__title {
+	font-size: 3.2rem;
+	font-weight: 500;
+	line-height: 4rem;
+}
+.download__button-wrap {
+	display: flex;
+	column-gap: 2.5rem;
+	align-items: flex-start;
+}
+.download__button-wrap a img{
+	max-width: 13.5rem;
+}
+
 /* 
 *----------------- Responsive Goes Here */
 
