@@ -18,11 +18,78 @@
 	html {
 		font-size: 13px;
 	}
+
+	.content__title {
+		font-size: 3.5rem;
+		line-height: 4rem;
+	}
+	.content__description {
+		white-space: normal;
+	}
+	.content__image {
+		border-radius: 4.5rem;
+	}
+
+	.download__hero-image {
+		border-radius: 4.5rem;
+	}
+	.download__button-wrap {
+		column-gap: 1.5rem;
+	}
+	.download__button-wrap a img {
+		max-width: 11.5rem;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 12px;
+	}
+
+	.container {
+		padding-left: 3.5rem !important;
+		padding-right: 3.5rem !important;
+	}
+
+	.content {
+		flex-direction: column-reverse;
+		text-align: center;
+		align-items: center;
+		/* justify-content: center; */
+	}
+	.content__wrap {
+		row-gap: 1.5rem;
+		margin-top: 2rem;
+	}
+	.content__image {
+		max-width: 28.25rem;
+	}
+	.content__title {
+		font-size: 4rem;
+		line-height: 4.5rem;
+	}
+	.content__button-wrap {
+		column-gap: 1.5rem;
+		justify-content: center;
+	}
+	.content__button-wrap a:nth-child(1) {
+		padding: 1rem 2.5rem;
+	}
+	.content__button-wrap a:nth-child(2) {
+		column-gap: 0.5rem;
+	}
+	.content__description {
+		white-space: pre-line;
+	}
+
+	.about__card-wrap {
+		flex-direction: column;
+	}
+	.about__image-wrap {
+		display: flex;
+		/* height: fit-content; */
+		align-items: center;
+		/* flex-direction: column; */
 	}
 }
 
