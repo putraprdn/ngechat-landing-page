@@ -83,6 +83,18 @@ body {
 .nav__links {
 	color: inherit;
 }
+.nav__links::after,
+.footer__lists a::after {
+	display: block;
+	content: "";
+	border-bottom: 1px solid #3d3a3f;
+	transform: scaleX(0);
+	transition: transform 0.25s ease-in-out;
+}
+.nav__links:hover:after,
+.footer__lists a:hover:after {
+	transform: scaleX(1);
+}
 .nav__button {
 	font-family: "Roboto";
 	font-weight: 500;
@@ -134,6 +146,11 @@ body {
 	display: flex;
 	line-height: 1.5rem;
 	font-weight: 500;
+	transition: all 0.25s ease-in-out;
+}
+.content__button-wrap a:hover {
+	opacity: 0.7;
+	transform: scale(1.05);
 }
 .content__button-wrap a:nth-child(1) {
 	background-color: #f9ae25;
@@ -205,7 +222,12 @@ body {
 .about__button-wrap {
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 	column-gap: 0.5rem;
+	transition: transform 0.25s ease-in-out;
+}
+.about__button-wrap:hover {
+	transform: scale(1.05);
 }
 
 .download {
@@ -280,5 +302,9 @@ body {
 	line-height: 1.5rem;
 }
 .footer__copyright p a {
-	color: #F9AE25;
+	color: #f9ae25;
+	transition: opacity 0.25s ease-in-out;
+}
+.footer__copyright p a:hover {
+	opacity: 0.6;
 }
