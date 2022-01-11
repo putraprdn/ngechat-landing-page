@@ -31,7 +31,7 @@
 		-moz-border-radius: 4.5rem;
 		-ms-border-radius: 4.5rem;
 		-o-border-radius: 4.5rem;
-}
+	}
 
 	.download__hero-image {
 		border-radius: 4.5rem;
@@ -39,7 +39,7 @@
 		-moz-border-radius: 4.5rem;
 		-ms-border-radius: 4.5rem;
 		-o-border-radius: 4.5rem;
-}
+	}
 	.download__button-wrap {
 		column-gap: 1.5rem;
 	}
@@ -106,18 +106,39 @@
 		font-size: 11px;
 	}
 
+	.container {
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+	}
+
 	.content {
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: center;
-		text-align: center;
+		/* text-align: center; */
 	}
 	.content__title {
 		font-size: 3.5rem;
 	}
-
+	.content__image {
+		max-width: unset;
+		/* width: 90%; */
+	}
+	.content__description {
+		white-space: normal;
+		font-size: 1.35rem;
+	}
 	.content__button-wrap {
+		flex-direction: column-reverse;
+		row-gap: 1.5rem;
 		justify-content: center;
+		align-items: center;
+		font-size: 1.2rem;
+	}
+	.content__button-wrap a:nth-child(1) {
+		align-items: center;
+		justify-content: center;
+		width: 100%;
 	}
 
 	.about__image-wrap {
@@ -125,26 +146,29 @@
 	}
 	.about__image {
 		max-width: unset;
-		width: 80%;
+		/* width: 100%; */
 	}
-	.about__image-description {
+	/* .about__image-description {
 		text-align: center;
-	}
+		justify-content: center;
+		align-items: center; 
+	}*/
+
 	.about__image-description p {
+		width: 95%;
 		font-size: 1.2rem;
-		padding: 0 3rem;
 		line-height: 1.8rem;
 	}
 	.about__button-wrap {
 		width: 100%;
 		font-size: 1.2rem;
-		justify-content: center;
+		/* justify-content: center; */
 	}
 
 	.download {
 		width: 100%;
 		flex-direction: column;
-		text-align: center;
+		/* text-align: center; */
 		align-items: center;
 		justify-content: center;
 		row-gap: 1.5rem;
@@ -154,14 +178,16 @@
 		line-height: 4.5rem;
 	}
 	.download__description {
-		font-size: 1.1rem;
+		font-size: 1.35rem;
+		white-space: normal;
+		line-height: 2rem;
 	}
 	.download__hero-image {
-		max-width: 28.25rem;
+		max-width: unset;
+		width: 100%;
 	}
-	.download__text-wrap {
+	.download__button-wrap {
 		justify-content: center;
-		align-items: center;
 	}
 
 	.footer {
@@ -177,9 +203,13 @@
 	}
 	.footer__description-wrap {
 		max-width: unset;
+		justify-content: center;
+		align-items: center;
 	}
 	.footer__description {
-		font-size: 1.2rem;
+		width: 80%;
+		font-size: 1.3rem;
+		line-height: 2rem;
 	}
 	.footer__title {
 		font-size: 2rem;
@@ -187,10 +217,11 @@
 	.footer__wrap ul {
 		display: flex;
 		flex-direction: column;
-		row-gap: 1rem;
+		row-gap: 1.5rem;
 		padding-left: 0;
 	}
 	.footer__lists a {
-		font-size: 1.2rem;
+		font-size: 1.35rem;
+		font-weight: 500;
 	}
 }
