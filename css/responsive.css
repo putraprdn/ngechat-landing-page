@@ -98,16 +98,6 @@
 		font-size: 11px;
 	}
 
-	.nav__link-wrap ul{
-		flex-direction: column;
-		text-align: center;
-		row-gap: 1.5rem;
-		padding-left: 0;
-	}
-	.nav__button {
-		display: none;
-	}
-
 	.content {
 		flex-direction: column-reverse;
 		align-items: center;
