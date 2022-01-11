@@ -234,11 +234,15 @@ body {
 .about__button-wrap {
 	display: flex;
 	align-items: center;
-	cursor: pointer;
 	column-gap: 0.5rem;
 	transition: transform 0.25s ease-in-out;
 }
-.about__button-wrap:hover {
+.about__button-wrap a {
+	display: flex;
+	align-items: center;
+	column-gap: 0.5rem;
+}
+.about__button-wrap a:hover {
 	transform: scale(1.05);
 }
 
