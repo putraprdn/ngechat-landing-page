@@ -71,6 +71,9 @@ body {
 	font-weight: 700;
 	cursor: pointer;
 }
+.nav__hamburger-wrap {
+	display: none;
+}
 .nav__link-wrap {
 	display: flex;
 	align-items: center;
