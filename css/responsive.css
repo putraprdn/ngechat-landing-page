@@ -27,11 +27,19 @@
 	}
 	.content__image {
 		border-radius: 4.5rem;
-	}
+		-webkit-border-radius: 4.5rem;
+		-moz-border-radius: 4.5rem;
+		-ms-border-radius: 4.5rem;
+		-o-border-radius: 4.5rem;
+}
 
 	.download__hero-image {
 		border-radius: 4.5rem;
-	}
+		-webkit-border-radius: 4.5rem;
+		-moz-border-radius: 4.5rem;
+		-ms-border-radius: 4.5rem;
+		-o-border-radius: 4.5rem;
+}
 	.download__button-wrap {
 		column-gap: 1.5rem;
 	}
